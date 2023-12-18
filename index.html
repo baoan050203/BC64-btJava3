@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div class="container">
+        <h2>Bài tập demo về array</h2>
+        <div class="form-group">
+          <label for="">Nhập số</label>
+          <input type="number" class="form-control" name="" id="nhapSo" aria-describedby="helpId" placeholder="">
+        </div>
+        <button class="btn btn-warning" id="btn1">Thêm số vào mảng</button>
+        <div class="p-3 bg-success text-white" id="kq1"></div>
+      </div>
+<div class="container">
+  <div class="toggle-container mt-3">
+    <button class="toggle-btn btn-success btn-lg " onclick="toggleContent('content1')">tổng các số trong mảng</button>
+    <div class="content" id="content1">
+        
+        
+        
+        <button class="btn btn-warning" id="btn2">tính tổng</button>
+        <div class="p-3 bg-success text-white" id="kq2"></div>
+
+    </div>
+</div>
+
+<div class="toggle-container mt-3">
+    <button class="toggle-btn btn-success btn-lg " onclick="toggleContent('content2')">đếm số dương</button>
+    <div class="content" id="content2">
+      <button class="btn btn-warning" id="btn3">đếm số dương</button>
+      <div class="p-3 bg-success text-white" id="kq3"></div>
+
+    </div>
+</div>
+
+<div class="toggle-container mt-3">
+    <button class="toggle-btn btn-success btn-lg" onclick="toggleContent('content3')">tìm số nhỏ nhất</button>
+    <div class="content" id="content3">
+      <button class="btn btn-warning" id="btn4">tìm số nhỏ nhất</button>
+      <div class="p-3 bg-success text-white" id="kq4"></div>
+
+    </div>
+</div>
+<div class="toggle-container mt-3">
+  <button class="toggle-btn btn-success btn-lg" onclick="toggleContent('content4')">Tìm số dương nhỏ nhất</button>
+  <div class="content" id="content4">
+      <button class="btn btn-warning" id="btn5">tìm số dương nhỏ nhất</button>
+      <div class="p-3 bg-success text-white" id="kq5"></div>
+  </div>
+</div>
+<div class="toggle-container mt-3">
+  <button class="toggle-btn btn-success btn-lg" onclick="toggleContent('content5')">Tìm số chẵn cuối cùng</button>
+  <div class="content" id="content5">
+      <button class="btn btn-warning" id="btn6">tìm số chẵn cuối cùng</button>
+      <div class="p-3 bg-success text-white" id="kq6"></div>
+  </div>
+</div>
+<div class="toggle-container mt-3">
+  <button class="toggle-btn btn-success btn-lg" onclick="toggleContent('content6')">đổi chỗ 2 vị trí</button>
+  <div class="content" id="content6">
+      <button class="btn btn-warning" id="btn7">đổi chỗ 2 vị trí</button>
+      <input type="text mt-2"
+          class="form-control" name="" id="soThuI" aria-describedby="helpId"   placeholder="Vui lòng nhập vị trí thứ nhất ">
+      <input type="text mt-2"
+          class="form-control" name="" id="soThuII" aria-describedby="helpId"   placeholder="Vui lòng nhập vị trí thứ 2 ">
+          
+      <div class="p-3 bg-success text-white" id="kq7"></div>
+  </div>
+
+  <div class="toggle-container mt-3">
+    <button class="toggle-btn btn-success btn-lg" onclick="toggleContent('content7')">sắp sếp tăng dần</button>
+    <div class="content" id="content7">
+        <button class="btn btn-warning" id="btn8">sắp sếp tăng dần</button>
+        <div class="p-3 bg-success text-white" id="kq8"></div>
+    </div>
+  </div>
+  <div class="toggle-container mt-3">
+    <button class="toggle-btn btn-success btn-lg" onclick="toggleContent('content8')">Tìm số nguyên tố đầu tiên</button>
+    <div class="content" id="content8">
+        <button class="btn btn-warning" id="btn9">số nguyên tố đầu tiên</button>
+        <div class="p-3 bg-success text-white" id="kq9"></div>
+    </div>
+  </div>
+
+  <div class="toggle-container mt-3">
+    <button class="toggle-btn btn-success btn-lg" onclick="toggleContent('content9')">so sánh số âm và dương</button>
+    <div class="content" id="content9">
+        <button class="btn btn-warning" id="btn10">so sánh số âm và dương</button>
+        <div class="p-3 bg-success text-white" id="kq10"></div>
+    </div>
+  </div>
+      
+</div>
+
+<div class="container mt-5">
+  <h3>nhập vào mảng</h3>
+  <div class="form-group">
+    <label for="">bài tập tìm số nguyên</label>
+    <input type="number" class="form-control" name="" id="nhapSo1" aria-describedby="helpId" placeholder="">
+  </div>
+  <button class="btn btn-warning" id="btn11">Thêm số vào mảng</button>
+  <div class="p-3 bg-success text-white mt-2" id="kq11"></div>
+  <div class="p-3 bg-success text-white mt-2 mb-3" id="result"></div>
+</div>
+
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
